@@ -53,4 +53,4 @@ pub fn get_random(&self, key: u64) -> Option<Vec<u8>> {
 Based on the retrieved randomness, the game determines if a user wins or loses. Rewards are then distributed and the bet is removed by the `resolve_bet` message after waiting for a few blocks. This approach requires two transactions from the user: registering their bet with `register_bet` and resolving it with `resolve_bet`.
 
 While this method may be less user-friendly, it ensures fairness and prevents exploitation of the system. Always make sure to use trusted and secure randomness oracles in your smart contract applications.
-```md
+```
